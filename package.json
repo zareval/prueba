@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "craco start --host 0.0.0.0",
-    "build": "craco build --host 0.0.0.0",
+    "build": "craco build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
