@@ -20,7 +20,7 @@ function HomePage() {
   };
 
   return (
-    <div className="bg-pink-200 container mx-auto p-4">
+    <div className="bg-pink-500 container mx-auto p-4">
       <h1 className="text-4xl font-bold mb-6 text-center">Lista de Películas</h1>
       {movies.length > 0 ? (
         <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
