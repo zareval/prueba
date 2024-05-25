@@ -12,7 +12,7 @@ function HomePage() {
 
   const fetchMovies = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/peliculas/creacionPelicula');
+      const response = await axios.get('http://backendpeliculas.azurewebsites.net/api/peliculas/creacionPelicula');
       setMovies(response.data);
     } catch (error) {
       console.error('Error fetching movies:', error);
