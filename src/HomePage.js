@@ -12,7 +12,7 @@ function HomePage() {
 
   const fetchMovies = async () => {
     try {
-      const response = await axios.get('https://backendpeliculas.azurewebsites.net/api/peliculas/creacionPelicula');
+      const response = await axios.get('http://localhost:8000/api/peliculas/creacionPelicula');
       setMovies(response.data);
     } catch (error) {
       console.error('Error fetching movies:', error);
@@ -20,8 +20,8 @@ function HomePage() {
   };
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="bg-pink-200 text-4xl font-bold mb-6 text-center">Lista de Películas</h1>
+    <div className="bg-pink-200 container mx-auto p-4">
+      <h1 className="text-4xl font-bold mb-6 text-center">Lista de Películas</h1>
       {movies.length > 0 ? (
         <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {movies.map((movie) => (
