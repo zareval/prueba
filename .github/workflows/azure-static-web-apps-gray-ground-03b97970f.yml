@@ -12,7 +12,6 @@ jobs:
     - name: Checkout GitHub Action
       uses: actions/checkout@v2
 
-    # Instalación de la versión específica de Node.js
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
@@ -22,7 +21,7 @@ jobs:
       run: npm install
 
     - name: Build project
-      run: npm run build  # Asegúrate de que este comando construya tu proyecto correctamente
+      run: npm run build
 
     - name: Deploy to Azure Static Web Apps
       uses: Azure/static-web-apps-deploy@v1
